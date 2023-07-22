@@ -1,0 +1,16 @@
+.calendarBox {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #333;
+  align-items: center;
+}
+
+.day {
+  width: 100%;
+  text-align: center;
+  background-color: cadetblue;
+}
+
+.date {
+  background-color: white;
+}
