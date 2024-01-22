@@ -1,16 +1,24 @@
 .calendarBox {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #333;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // border: 1px solid #333;
+  // align-items: center;
+
+  flex: calc(100% / 7); /* Flex-grow: 1, Flex-basis: 0, Flex-basis: 14.2857% */
+  border: 1px solid black;
+  // padding: 10px;
+  box-sizing: border-box;
+  margin: 0.5rem 2px 0.5rem 0;
 }
 
 .day {
   width: 100%;
   text-align: center;
   background-color: cadetblue;
+  color: white;
 }
 
 .date {
   background-color: white;
+  text-align: center;
 }

@@ -1,11 +1,13 @@
 import styles from "./styles/Header.module.scss";
+import MenuIcon from "@mui/icons-material/Menu";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 const Header = () => {
   return (
     <div className={styles.headerContainer}>
-      <span>Menu</span>
+      <MenuIcon />
       <span className={styles.appName}>Exercise Tracker</span>
-      <span>Acc</span>
+      <AccountCircleIcon />
     </div>
   );
 };

@@ -6,13 +6,19 @@ import SupabaseLogo from "../components/SupabaseLogo";
 import NextJsLogo from "../components/NextJsLogo";
 import { HomePage } from "@/src/components/HomePage";
 
-import { config } from '@fortawesome/fontawesome-svg-core';
-import '@fortawesome/fontawesome-svg-core/styles.css'; // Import the CSS for the icon styles
-import library from '../src/styles/icons'; // Import your icons.js file
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css"; // Import the CSS for the icon styles
+import library from "../src/styles/icons"; // Import your icons.js file
 
 config.autoAddCss = false; // Disable automatic CSS injection
 
 export const dynamic = "force-dynamic";
+
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+import { FloatingButton } from "@/src/common/components/FloatingButton/FloatingButton";
 
 // const resources = [
 //   {
@@ -57,6 +63,7 @@ export default async function Index() {
   return (
     <>
       <HomePage />
+      <FloatingButton />
     </>
   );
 
